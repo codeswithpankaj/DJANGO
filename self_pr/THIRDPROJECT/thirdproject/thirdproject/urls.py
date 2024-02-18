@@ -17,7 +17,17 @@ Including another URLconf
 
 from django.contrib import admin
 from django.urls import path
+from members import views
+'''
 
 urlpatterns = [
     path("admin/", admin.site.urls),
+    path("members/", views.)
+
+]'''
+
+
+urlpatterns = [
+    path("admin/", admin.site.urls),
+    path('profiles/', views.display_profiles),
 ]
