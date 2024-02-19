@@ -19,7 +19,7 @@ from django.urls import path
 from django.urls import include #importing include function
 #from Home.views import *
 #from Home import views# both are same but differeent ways of url mapping
-from Home import urls
+from Home.urls import incluse,path
 
 urlpatterns = [
     path("admin/", admin.site.urls),
