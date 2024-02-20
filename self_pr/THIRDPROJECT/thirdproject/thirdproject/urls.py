@@ -18,6 +18,8 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path
 from members import views
+from django.urls import include
+
 '''
 
 urlpatterns = [
@@ -28,6 +30,6 @@ urlpatterns = [
 
 
 urlpatterns = [
-    path("admin/", admin.site.urls),
-    path('profiles/', views.display_profiles),
+    path('admin/', admin.site.urls),
+    path('members/', include('members.urls')),
 ]
