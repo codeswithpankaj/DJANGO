@@ -19,11 +19,11 @@ from django.urls import path
 from django.urls import include #importing include function
 #from Home.views import *
 #from Home import views# both are same but differeent ways of url mapping
-from Home.urls import incluse,path
-
+from django.urls import include,path
+from Home import urls
 urlpatterns = [
     path("admin/", admin.site.urls),
     #path("home/", home ),
     #path("home/", views.home ),
-    path("home/", include('Home.urls')),
+    path("home/", include(urls)),
 ]
