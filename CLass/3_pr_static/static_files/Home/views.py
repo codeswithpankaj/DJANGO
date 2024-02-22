@@ -1,6 +1,6 @@
 from django.shortcuts import render
+from django.http import HttpResponse
 
 
 def first(request):
-   # profiles = UserProfile.objects.all()
-    return("hii andy")
+   return HttpResponse("hello andy")
