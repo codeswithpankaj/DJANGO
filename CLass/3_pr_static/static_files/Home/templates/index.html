@@ -1,16 +1,18 @@
+{% load static %}
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Django Tutorial</title>
-    <!-- thihs way you can import your css file in Django using{% %} -->
+    
     <link rel="stylesheet" type="text/css" href="{% static 'css/style.css' %}">
     <link rel="stylesheet" type="text/css" href="{% static 'css/bootstrap.min.css' %}">
     <script src="{% static 'js/bootstrap.bundle.min.js' %}"></script>
 
 </head>
 <body>
+  <h3>static files</h3>
     <nav class="navbar navbar-expand-lg bg-body-tertiary">
         <div class="container-fluid bg-light ">
           <img class="img-fluid "  src="{%static 'img/logo.png'} " height="20" width="30">
@@ -48,7 +50,7 @@
       <div class="container">
         <div class="row mt-4">
           <div class="col-sm-3 top">
-            <img  class="img-fluid top" src="{%static 'css/img/hub .jpg'}" >
+            <img  class="img-fluid top" src="{%static 'img/hub .jpg'}" >
           </div>
 
         </div>

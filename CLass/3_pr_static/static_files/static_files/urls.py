@@ -20,9 +20,17 @@ from django.urls import path
 #self
 #from Home import views
 from Home.views import *
+from django.conf import settings
+from django.conf.urls.static import static
+
 
 urlpatterns = [
     #path("admin/", admin.site.urls),
-    path("home/",first)
+    path("home/",firstpage),
+
+    #according to the documentation
+    #css_url = static('css/bootstrap.min.css'),
+    #img_url = static('img/'),
+   # Do something with the CSS URL
 
 ]
