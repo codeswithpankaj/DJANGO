@@ -3,12 +3,12 @@ from django.http import HttpResponse
 
 from django.templatetags.static import static
 
-def f_css(request):
-   css_url = static('css/bootstrap.min.css')
+# def f_css(request):
+#    css_url = static('css/bootstrap.min.css')
    # Do something with the CSS URL
 
-def f_html(request):
-   img_url = static('img/')
+# def f_html(request):
+#    img_url = static('img/')
 
 def firstpage(request):
    img_url = static('img/hub.jpg')
